@@ -23,6 +23,10 @@ class UrlForm extends Component {
     this.setState({title: '', urlToShorten: ''});
   }
 
+  // A URL stored on the server has an id, long_url, short_url, and title. 
+  //The long_url is the original long format URL. The short_url is the shorted version of the long_url. The id is a unique identifier for that URL (it is also used to make the short_url).
+  //The title is any title given by the user to label the url.
+  
   render() {
     return (
       <form>
